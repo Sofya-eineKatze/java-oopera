@@ -34,3 +34,4 @@ class MusicalShow extends Show {
         System.out.println(librettoText);
     }
 }
+// Файл обновлен: Tue Nov 11 19:54:36 RTZ 2025

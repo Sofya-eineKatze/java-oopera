@@ -20,4 +20,4 @@ class Director extends Person {
     public String toString() {
         return super.toString() + ", количество спектаклей: " + numberOfShows;
     }
-}
+}// Файл обновлен: Tue Nov 11 19:54:36 RTZ 2025
