@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 class MusicalShow extends Show {
-    String musicAuthor;
-    String librettoText;
+    private String musicAuthor;
+    private String librettoText;
 
     public MusicalShow(String title, int duration, Director director,
                        ArrayList<Actor> listOfActors, String musicAuthor, String librettoText) {
@@ -10,9 +10,27 @@ class MusicalShow extends Show {
         this.musicAuthor = musicAuthor;
         this.librettoText = librettoText;
     }
-    // Распечатать текст либретто
+
+    // Геттеры и сеттеры
+    public String getMusicAuthor() {
+        return musicAuthor;
+    }
+
+    public void setMusicAuthor(String musicAuthor) {
+        this.musicAuthor = musicAuthor;
+    }
+
+    public String getLibrettoText() {
+        return librettoText;
+    }
+
+    public void setLibrettoText(String librettoText) {
+        this.librettoText = librettoText;
+    }
+
+    // Распечатать текст либретто - исправленный доступ к title
     public void printLibretto() {
-        System.out.println("Либретто спектакля '" + title + "':");
+        System.out.println("Либретто спектакля '" + getTitle() + "':");
         System.out.println(librettoText);
     }
 }

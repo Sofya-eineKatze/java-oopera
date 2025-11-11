@@ -33,18 +33,18 @@ public class Theatre {
 
         // Обычный спектакль - "Ревизор" Гоголя
         Show regularShow = new Show("Ревизор", 140, director1, new ArrayList<>());
-        System.out.println("   - Обычный спектакль: '" + regularShow.title + "'");
+        System.out.println("   - Обычный спектакль: '" + regularShow.getTitle() + "'");
 
         // Оперный спектакль - "Травиата" Верди
         Opera opera = new Opera("Травиата", 160, director1, new ArrayList<>(),
                 musicAuthor, "Опера в трёх действиях по драме А. Дюма-сына «Дама с камелиями».", 20);
-        System.out.println("   - Опера: '" + opera.title + "'");
+        System.out.println("   - Опера: '" + opera.getTitle() + "'");
 
         // Балетный спектакль - "Жизель" Адана
         Ballet ballet = new Ballet("Жизель", 130, director2, new ArrayList<>(),
                 "Адольф Адан", "Балет в двух актах о трагической любви крестьянской девушки.",
                 choreographer);
-        System.out.println("   - Балет: '" + ballet.title + "'");
+        System.out.println("   - Балет: '" + ballet.getTitle() + "'");
 
         // 5. Распределяем актеров по спектаклям
         System.out.println("\n5. Распределяем актеров по спектаклям:");
@@ -108,4 +108,3 @@ public class Theatre {
 
         System.out.println("\nПРЕДСТАВЛЕНИЕ НАЧИНАЕТСЯ!");
     }
-}

@@ -1,15 +1,48 @@
 import java.util.ArrayList;
 
 class Show {
-    String title;
-    int duration;
-    Director director;
-    ArrayList<Actor> listOfActors;
+    private String title;
+    private int duration;
+    private Director director;
+    private ArrayList<Actor> listOfActors;
 
     public Show(String title, int duration, Director director, ArrayList<Actor> listOfActors) {
         this.title = title;
         this.duration = duration;
         this.director = director;
+        this.listOfActors = listOfActors;
+    }
+    // Геттеры
+    public String getTitle() {
+        return title;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public Director getDirector() {
+        return director;
+    }
+
+    public ArrayList<Actor> getListOfActors() {
+        return listOfActors;
+    }
+
+    // Сеттеры
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+    public void setDirector(Director director) {
+        this.director = director;
+    }
+
+    public void setListOfActors(ArrayList<Actor> listOfActors) {
         this.listOfActors = listOfActors;
     }
 
@@ -20,7 +53,7 @@ class Show {
 
     // Распечатать список всех актёров
     public void printActors() {
-        System.out.println("Актёры спектакля '" + title + "':");
+        System.out.println("Актёры спектакля '" + getTitle() + "':");
         for (Actor actor : listOfActors) {
             System.out.println("  - " + actor.toString());
         }
@@ -50,4 +83,3 @@ class Show {
         System.out.println("Актёр с фамилией '" + oldActorSurname + "' не найден в спектакле.");
         return false;
     }
-}
