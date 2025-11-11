@@ -37,4 +37,3 @@ class Actor extends Person {
     public String toString() {
         return super.toString() + " (" + height + " см)";
     }
-}// Файл обновлен: Tue Nov 11 19:54:36 RTZ 2025

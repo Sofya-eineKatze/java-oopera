@@ -108,4 +108,3 @@ public class Theatre {
 
         System.out.println("\nПРЕДСТАВЛЕНИЕ НАЧИНАЕТСЯ!");
     }
-}// Файл обновлен: Tue Nov 11 19:54:36 RTZ 2025
